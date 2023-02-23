@@ -23,7 +23,18 @@ packer.startup(
    -- telescope extensions
    use("LinArcX/telescope-env.nvim")
    -- dashboard-nvim
-   use({"glepnir/dashboard-nvim",requires = {'nvim-tree/nvim-web-devicons'}})
+   -- use({"glepnir/dashboard-nvim",commit = "a36b3232c98616149784f2ca2654e77caea7a522", requires = {'nvim-tree/nvim-web-devicons'}})
+   -- use("glepnir/dashboard-nvim")
+   use {
+  'glepnir/dashboard-nvim',
+  event = 'VimEnter',
+  config = function()
+    require('dashboard').setup {
+      -- config
+    }
+  end,
+  requires = {'nvim-tree/nvim-web-devicons'}
+}
    -- project
    use("ahmedkhalf/project.nvim")
    -- treesitter
