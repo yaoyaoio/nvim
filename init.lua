@@ -16,8 +16,8 @@ require("plugin-config.lualine")
 -- 模糊搜索插件
 require("plugin-config.telescope")
 -- 欢迎界面插件
-require("plugin-config.dashboard")
+-- require("plugin-config.dashboard")
 -- 项目管理插件
-require("plugin-config.project")
+-- require("plugin-config.project")
 -- 语法高亮插件
 require("plugin-config.nvim-treesitter") 
